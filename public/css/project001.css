@@ -1,0 +1,252 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --dark: #333;
+  --primary: #ddd;
+  --light: #fff;
+  --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+.wrappper{
+    display: grid;
+    grid-gap: 20px;
+}
+
+body {
+  /* margin:30px 50px; */
+  width: 99%;
+  background: #ccc;
+  margin: 20px 7px 6px 7px;
+  line-height: 1.4;
+  font-size: 1em;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+/* .head{
+  padding: 0px;
+  margin: -21px -0;
+} */
+.container-wraper {
+  height: 100%;
+  display: grid;
+  justify-content: space-around;
+  grid-template-columns: 62% 33%;
+  margin: 0px 15px 15px 15px;
+  /* padding: 7px; */
+}
+.categories {
+  border: 1px solid #333;
+  border-radius: 7px;
+  /* background-color: var(--dark) ; */
+  display: grid;
+  grid-gap: 8.5px;
+  /* grid-template-columns: 10%; */
+}
+
+.btn {
+  background: var(--light);
+  box-shadow: var(--shadow);
+  color: var(--dark);
+  padding: 0.4rem 1.3rem;
+  text-decoration: none;
+  border: 0;
+  /* padding:0.6rem 1.3rem; */
+  
+}
+.responses {
+  margin-top: 10px;
+  margin-right: 15px;
+  display: flex;
+  justify-content: flex-end;
+  /* justify-content: space-between; */
+}
+.res {
+  padding-left: 1rem;
+}
+.resp {
+  border: none;
+  background-color: var(--primary);
+  padding-top: 2px;
+  padding-bottom: -2px;
+  padding-right: 3px;
+  cursor: pointer;
+}
+.iframe-container {
+  display: grid;
+  grid-template-columns: 49% 49%;
+  /* justify-content: space-between; */
+  margin: 7px;
+  grid-gap: 10px;
+
+}
+iframe {
+  border-radius: 7px;
+}
+.sportsnews {
+  /* border: 1px solid var(--dark); */
+  margin-top: 5px;
+  margin-bottom: 2.7px;
+  width: auto;
+  height: 9.4rem;
+  justify-content: space-around;
+  padding: 0px;
+}
+.politics {
+  height: 170px;
+}
+.politiqs {
+  background: var(--primary);
+  width: auto;
+  box-shadow: var(--shadow);
+  display: grid;
+  grid-gap: 8px;
+  grid-template-columns: 20% 78%;
+  margin-top: 3.5px;
+  margin-bottom: 2px;
+}
+.image {
+  background: var(--primary);
+  box-shadow: var(--shadow);
+  border-radius: 7px;
+  padding: 0.7rem;
+}
+.pockettext {
+  display: inline;
+  /* background: var(--primary); */
+  text-decoration: none;
+  padding: 0.4rem;
+  text-align: center;
+  color: var(--dark);
+  font-size: 0.7rem;
+  cursor: pointer;
+}
+.pockettext:hover {
+  background: var(--dark);
+  color: var(--light);
+}
+.images {
+  padding: 0.35rem;
+  margin-bottom: 10px;
+}
+.heads {
+  display: grid;
+  grid-template-columns: 100%;
+  justify-content: flex-end;
+}
+/* .category{
+    margin-top: 10px;
+} */
+.inside {
+  align-items: center;
+}
+.text {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  display: grid;
+  grid-template-columns: 95%;
+}
+.personal {
+  width: auto;
+  height: 6rem;
+  margin-bottom: 41px;
+  background: var(--light);
+  box-shadow: var(--shadow);
+  border-radius: 7px;
+  padding: 0.7rem;
+  display: grid;
+  grid-template-columns: 83% 10%;
+}
+#imageUpload {
+  display: none;
+}
+
+#profileImage {
+  cursor: pointer;
+}
+
+.profile-container {
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  /* -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%; */
+  border-radius: 50%;
+  border: 1px solid var(--dark);
+}
+
+.profile-container img {
+  width: 50px;
+  height: 50px;
+}
+#uploadbtn {
+  position: absolute;
+  left: auto;
+  background: var(--primary);
+  box-shadow: var(--shadow);
+  margin-top: 5px;
+  /* display: none; */
+}
+.footer {
+  text-align: center;
+  background: var(--primary);
+  margin-top: 1rem;
+  padding: 15px;
+  width: 92.9%;
+  margin-left: 1rem;
+}
+.breaking {
+  display: flex;
+  /* grid-template-columns: 15% 80%; */
+  text-transform: uppercase;
+}
+img {
+  max-width: 100%;
+}
+h2 {
+  font-size: 1.6rem;
+}
+
+.header {
+  display: flex;
+  /* justify-content: center; 
+    align-items: center; */
+  margin-left: 25px;
+  /* padding: 15px 15px 0 15px; */
+} 
+.wrapper{
+  margin: 20px -2px 20px 20px;
+}
+.newz {
+  display: grid;
+  grid-template-columns: 23% 23% 23% 23%;
+  grid-gap: 1.4rem;
+}
+
+.newscard {
+  text-decoration: none;
+  background-color: var(--primary);
+  padding: 0.7rem;
+  color: black;
+
+}
+.newz:hover {
+  box-shadow: var(--dark);
+}
+.newzsingle {
+  background-color: var(--primary);
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+.info{
+    background: var(--primary);
+    box-shadow: var(--shadow);
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0.7rem;
+    margin: 1rem 2rem;
+}

@@ -1,0 +1,74 @@
+<%- include("header") -%>
+  <div class="main-nav">
+    <div>
+      <h1 style="margin-right: 10px">
+        <img width="40px" height="40px" src="/img/logo.png" alt="News Logo" />
+        NEWS
+      </h1>
+    </div>
+    <div>
+      <ul class="links">
+        <li>
+          <a href="#"><i class="fas fa-home"></i> Home</a>
+        </li>
+        <li>
+          <a href="/politics"><i class="fas fa-film"></i> Politics</a>
+        </li>
+        <li>
+          <a href="/business"><i class="fas fa-chart-line"></i> Business</a>
+        </li>
+        <li>
+          <a href="/economics"
+            ><i class="fas fa-chart-network"></i> Economics</a
+          >
+        </li>
+        <li>
+          <div class="dropdown">
+            <button class="dropbtn">
+              Others <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="/world">World</a>
+              <a href="/technology">Technology</a>
+              <a href="/science">Science</a>
+              <a href="/energy">Energy</a>
+              <a href="/food">Food</a>
+              <a href="/entertainment">Entertainment</a>
+              <a href="/travel">Travel</a>
+              <a href="/music">Music</a>
+              <a href="/sport">Sport and Gaming</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="seachbar">
+      <form action="/business" method="POST" class="form1">
+        <input
+          type="text"
+          placeholder="Search for news"
+          name="search"
+          class="search"
+        />
+        <button style="border: 0; cursor: pointer" type="submit">
+          <i
+            style="background: var(--primary); padding: 10px"
+            class="fas fa-search fa-1x"
+          ></i>
+        </button>
+      </form>
+    </div>
+  </div>
+<div class="wrapper">
+  <div class="newz">
+    <%contents.forEach(function(article, index){%>
+    <a href="<%=article.link%>" class="newscard" id="card<%=index%>">
+      <img src="<%-article.media%>" alt=""/>
+      <h4><%=article.authors[1]%></h4>
+      <p><%=article.excerpt%></p>
+    </a>
+    <%})%>
+  </div>
+</div>
+
+<%- include("footer") -%>
