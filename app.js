@@ -330,7 +330,7 @@ app.route('/sports')
         });
     });
 
-
+// Search functionality in the business.ejs page
     app.route('/business')
     .post((req, res) => {
 
